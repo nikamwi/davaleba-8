@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsiv.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
+        <p class="fa-bars-icon" id="mininav" onclick="showmininav()">
+            <i class="fa-solid fa-bars"></i>
+        </p>
+        <div class="xisdivi" id="x"><p class="x" onclick="closenav()">&#9747;</p></div>
+        <nav id="navigacia">
         <ul>
-            <li class="pirvelili"><a href="#">ვეგანური პროდუქცია</a></li>
-            <li class="meoreli"><a href="#">მაღაზიები</a></li>
-            <li class="mesameli"><a href="#">shop</a></li>
+            <li class="pirvelili navfotoli activ"><a href="#">ვეგანური პროდუქცია</a></li>
+            <li class="meoreli navfotoli"><a href="#">მაღაზიები</a></li>
+            <li class="mesameli navfotoli"><a href="shop.html">shop</a></li>
         </ul>
         </nav>
-        <div class="mini">
-        <div class="meniuicon"></div>
-            <ul class="inernav">
-            <li><a href="#">ვეგანური პროდუქცია</a></li>
-            <li><a href="#">მაღაზიები</a></li>
-            <li><a href="#">shop</a></li>
-            </ul>
-        </div>
     </header>
     <main>
         <div class="aqciisdro">
@@ -33,20 +31,22 @@
         </div>
         <div class="mcenare">
         <div class="gero"></div>
-        <div class="marcxena pirveli">
+        <div class="marcxena pirveli fotolidateqsti">
             <a href="#"><p class="teqsti">მიიღე კალციუმით მდიდარი საკვები: უცხიმო ან ნაკლებად ცხიმიანი რძის პროდუქტები.</p><div class="fotoli"></div></a>
         </div>
-        <div class="marjvena meore">
+        <div class="marjvena meore fotolidateqsti">
             <a href="#"><div class="fotoli"></div><p class="teqsti">მიიღე კალციუმით მდიდარი საკვები: უცხიმო ან ნაკლებად ცხიმიანი რძის პროდუქტები.</p></a>
         </div>
-        <div class="marcxena mesame">
+        <div class="marcxena mesame fotolidateqsti">
             <a href="#"><p class="teqsti">მიიღე კალციუმით მდიდარი საკვები: უცხიმო ან ნაკლებად ცხიმიანი რძის პროდუქტები.</p><div class="fotoli"></div></a>
         </div>
-        <div class="marjvena meotxe">
+        <div class="marjvena meotxe fotolidateqsti">
             <a href="#"><div class="fotoli"></div><p class="teqsti">მიიღე კალციუმით მდიდარი საკვები: უცხიმო ან ნაკლებად ცხიმიანი რძის პროდუქტები.</p></a>
         </div>
         </div>
     </main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/a8a1c24453.js" crossorigin="anonymous"></script>
+    <script src="js/mininav.js"></script>
 </body>
 </html>

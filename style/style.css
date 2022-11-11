@@ -13,10 +13,32 @@ body{
 header{
     padding-bottom: 90px;
 }
+.fa-bars-icon{
+    width: 100%;
+    text-align: right;
+    font-size: 50px;
+    color: #79B331;
+    display: none;
+}
+.xisdivi{
+    margin-top: 0;
+    background-color: #ffffff;
+    display: none;
+}
+.x{
+    padding-top: 0;
+    width: 50px;
+    font-size: 50px;
+    padding: 5px;
+}
+.x:hover, .fa-bars:hover{
+    cursor: pointer;
+} 
 ul{
     display: flex;
-    margin-left: 550px;
+    margin-right: 50px;
     margin-top: 50px;
+    justify-content: end;
 }
 nav li{
     background-color: #C4C4C4;
@@ -29,9 +51,11 @@ nav li{
 nav li:hover{
     background-color: #79B331;
 }
+nav .activ{
+    background-color: #79B331;
+}
 nav .pirvelili{
     width: 228px;
-    background-color: #79B331;
 }
 nav .meoreli{
     width: 126px;
@@ -42,30 +66,6 @@ nav .mesameli{
 nav a{
     font-size: 18px;
     color: #000000;
-}
-.mini{
-    display: none;
-    margin-bottom: 50px;
-}
-.mini .inernav{
-    display: none;
-}
-.mini .inernav li{
-    width: 33.33%;
-    height: 46px;
-    background-color: #C4C4C4;
-    text-align: center;
-    border-radius: 0 35px 0 35px; 
-}
-.mini .inernav a{
-    color: #000000;
-    font-size: 14px;
-}
-.meniuicon{
-    background-image: url(../img/menu\ \(1\).png);
-    width: 64px;
-    height: 64px;
-    margin-left: 300px;
 }
 main .aqciisdro{
     width: 358px;
@@ -89,7 +89,6 @@ main .wre{
     75%{top: 126px; left:0;}
     100%{top:0; left:0;}
 }
-  
 main .aqcia{
     font-size: 18px;
     margin: 10px 0 20px 0;
@@ -160,73 +159,52 @@ main .marjvena .fotoli:hover, main .marcxena .fotoli:hover{
 main .marjvena .teqsti:hover, main .marcxena .teqsti:hover{
     color: #79B331;
 }
-/* -------------------ipad pro----------------------*/
-@media only screen and (max-width: 1024px) {
-    body {
-      background-color: #79B331;
-      background-image: url(../img/Rectangle\ 1.png);
-    }
-    ul{
-        justify-content: space-evenly;
-        margin-left: 0;
-    }
-    main .aqciisdro{
-        margin-left: 500px;
-    }
-    main .marjvena a{
-        flex-direction: row-reverse;
-    }
-    main .meore, main .meotxe{
-        padding-left: 56px
-    }
-    main .marjvena .fotoli{
-        border-radius: 0 50% 0 50%;
-    }
-    main .mcenare{
-        margin-top: 480px;
-    }
-  }
-  /* -----------------iphone 11 pro------------------- */
-  @media only screen and (max-width: 414px) {
-    body {
-      background-color: #79B331;
-      background-image: url(../img/iphone\ 11\ pro.png);
-    }
-    nav li{
-        display: none;
-    }
-    .mini{
-        display: block;
-    }
-    .meniuicon:hover .inernav{
-        display: block;
-    }
-    main .aqciisdro{
-        margin-left: 28px;
-    }
-    main .marcxena a{
-        flex-direction: row-reverse;
-    }
-    main .marcxena p, main .marjvena {
-        font-size: 14px;
-    }
-    main .gero{
-        display: none;
-    }
-    main .mcenare{
-        width: 200px;
-        margin-left: 0;
-        padding: 0;
-        flex-wrap: wrap;
-        height: 100%;
-    }
-    main .marcxena a,main .marjvena a{
-        display: inline-block;
-        flex-wrap: wrap;
-        width: 200px;
-        align-items: flex-start;
-    }
-    .mini .inernav li:hover{
-        background-color: #79B331;
-    }
-  }
+/* ---------------shop--------------------- */
+.shop .mtlianicharcho{
+    width: 620px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 40%;
+    margin-bottom: 200px;
+}
+.shop .charcho{
+    width: 200px;
+    height: 200px;
+    background-color: #D9D9D9;
+}
+.shop .charcho:hover{
+    background-color: #79B331;
+}
+.shop a{
+    margin-left: 65px;
+}
+.shop p{
+    width: 100%;
+    text-align: center;
+}
+.shop .minicharcho{
+    width: 70px;
+    height: 70px;
+    margin: 30px 65px;
+}
+.shop .pirvelia{
+    background-image: url(../img/biodegradable\ 1.png);
+}
+.shop .meorea{
+    background-image: url(../img/detox\ 1.png);
+}
+.shop .mesamea{
+    background-image: url(../img/keto\ 1.png);
+}
+.shop .meotxea{
+    background-image: url(../img/cereal\ 1.png);
+}
+.shop .mexutea{
+    background-image: url(../img/salad\ 1.png);
+}
+.shop .meeqvsea{
+    background-image: url(../img/vitamin\ 1.png);
+}
